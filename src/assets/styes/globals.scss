@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .container {
+    @apply sm:max-w-none md:max-w-none lg:max-w-none xl:max-w-[1280px] 2xl:max-w-[1440px] w-[1200px] mx-auto;
+  }
+
+  @font-face {
+    font-family: 'Sen';
+    src: url('../fonts/sen/Sen-Regular.ttf') format('ttf');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Sen';
+    src: url('../fonts/sen/Sen-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Sen';
+    src: url('../fonts/sen/Sen-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Sen';
+    src: url('../fonts/sen/Sen-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+}
+
+html {
+  @apply h-full overflow-hidden;
+}
+
+body {
+  @apply h-full overflow-auto font-sen;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
